@@ -1,6 +1,6 @@
 /*
 * https://whatsapp.com/channel/0029Van6ItnIyPtYQU3k0z3s
-* script by whyuxD
+* script by hironi
 • jangan di jual ya kalian para dev
 */
 //jangan hapus wm bang😁

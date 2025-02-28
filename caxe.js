@@ -1,6 +1,6 @@
 /*
 * https://whatsapp.com/channel/0029Van6ItnIyPtYQU3k0z3s
-* script by whyuxD
+* script by hironi
 • jangan di jual ya kalian para dev
 
     SETIAP ORANG PUNYA KELEBIHAN, 
@@ -149,7 +149,7 @@ if (!isAdmins && !WhyuxTheCreator) return
 let list = []
 list.push({
     displayName: `ɴᴏ ᴄᴀʟʟ`,
-    vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${ownername}\nFN:${ownername}\nitem1.TEL;waid=${owner}:${owner}\nitem1.X-ABLabel:iam a sigma boy!!\nitem2.EMAIL;type=INTERNET:${botname}\nitem2.X-ABLabel:${wmbot}!\nitem3.URL:whyuxD.neocities.org\nitem3.X-ABLabel:Website\nitem4.ADR:;;Region;;;;\nitem4.X-ABLabel:Asia, Indonesia\nEND:VCARD`
+    vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${ownername}\nFN:${ownername}\nitem1.TEL;waid=${owner}:${owner}\nitem1.X-ABLabel:iam a sigma boy!!\nitem2.EMAIL;type=INTERNET:${botname}\nitem2.X-ABLabel:${wmbot}!\nitem3.URL:hironi.neocities.org\nitem3.X-ABLabel:Website\nitem4.ADR:;;Region;;;;\nitem4.X-ABLabel:Asia, Indonesia\nEND:VCARD`
 });
 //=========== MESSAGE ===========//
 if (m.message && m.isGroup) {
@@ -188,7 +188,7 @@ const reply = async (teks) => {
                 body: wm, 
                 thumbnailUrl: thumbnail, 
                 thumbnail: '',
-                sourceUrl: 'whyuxD.neocities.org', 
+                sourceUrl: 'Hironi.neocities.org', 
             },
         },
         text: teks, 
@@ -505,14 +505,14 @@ contextInfo: {
 isForwarded: true,
 forwardedNewsletterMessageInfo: {
 newsletterJid: saluran,
-newsletterName: `    by whyuxD`,
+newsletterName: `    by hironi`,
 serverMessageId: 2
 },
 	externalAdReply: {
       title: ownername,
       body: '',
       thumbnailUrl: thumbnail,
-      sourceUrl: `https://whyuxD.neocities.org`,
+      sourceUrl: `https://hironi.neocities.org`,
       mediaType: 1,
       renderLargerThumbnail: true
       }
@@ -582,7 +582,7 @@ let res = generateWAMessageFromContent(
             message: menunya,
             priceAmount1000: "91000",
             thumbnail: await getBuffer(ppuser),
-            surface: "whyuxD",
+            surface: "hironi",
             contextInfo: { mentionedJid: [m.sender] }, 
         }, },{quoted:m});
 await Darkyu.relayMessage(m.chat, res.message, {messageId: res.key.id});
@@ -1606,7 +1606,7 @@ let msg = generateWAMessageFromContent(
 
                productId: "9116471035103640",
 
-               title: `script by whyuxD`,
+               title: `script by hironi`,
 
                description: "",
 
@@ -1645,7 +1645,7 @@ let msg = generateWAMessageFromContent(
 
                       "name": "cta_url",
 
-                      "buttonParamsJson": "{\"display_text\":\"whyuxD\",\"url\":\"wa.me/6287862115557\"}"
+                      "buttonParamsJson": "{\"display_text\":\"\",\"url\":\"wa.me/6287862115557\"}"
 
                     },
 
@@ -1728,7 +1728,7 @@ case 'calculator': {
     
 case 'usn':
 case 'username': {
-    if (!text) return reply(`Masukkan username yang valid!\ncontoh: ${command} whyuxD`);
+    if (!text) return reply(`Masukkan username yang valid!\ncontoh: ${command} hironi`);
     const username = text.trim();
     let result = `Hasil pencarian untuk: *${username}*\n\n`;
     const checkUsername = async (platform, url) => {
@@ -1902,7 +1902,7 @@ headers: {'Content-Type': 'application/json'}
 const buffer = Buffer.from(res.data.result.image, 'base64');
 const rest = { 
 status: "200", 
-creator: "whyuxD",
+creator: "hironi",
 result: buffer
 };
 Darkyu.sendImageAsSticker(m.chat, rest.result, m, {packname: `${global.packname}`,author: `${global.author}`
@@ -1919,7 +1919,7 @@ break;
 
 case 'bratvideo': case 'bratvid': {
 const { execSync } = require('child_process')
-  if (!text) return reply(`Contoh: ${prefix+command} halo saya whyuxD`)
+  if (!text) return reply(`Contoh: ${prefix+command} halo saya hironi`)
   if (text.length > 40) return reply(`Karakter terbatas, max 40 huruf character!`)
   const words = text.split(" ")
   const tempDir = path.join(process.cwd(), 'lib')
@@ -2609,7 +2609,7 @@ case 'ai': {
     const { fromBuffer } = require('file-type');
     if (!text) return reply('apa yang bisa saya bantu?');
     try {
-        const prompt = `Kamu adalah DarkBot Whatsapp buatan whyuxD, yang agak pemalu, kamu juga sangat pintar menggunakan multi bahasa, menjelaskan dengan singkat padat dan jelas`
+        const prompt = `Kamu adalah DarkBot Whatsapp buatan hironi, yang agak pemalu, kamu juga sangat pintar menggunakan multi bahasa, menjelaskan dengan singkat padat dan jelas`
         const formData = new FormData();
         if (/image|video|audio|application\/pdf/.test(mime)) {
             let media = await (m.quoted ? m.quoted.download() : m.download())
@@ -2719,7 +2719,7 @@ break
             title: pushname,
             body: ``,
             thumbnailUrl: ppuser,
-            sourceUrl: "https://whyuxD.neocities.org",
+            sourceUrl: "https://hironi.neocities.org",
             mediaType: 1,
             renderLargerThumbnail: false,
         },
